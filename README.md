@@ -5,3 +5,7 @@ HTML
 CSS
 JavaScript
 Ruby
+## Setup
+### Convention
+Markdown
+Branching
