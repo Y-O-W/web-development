@@ -25,4 +25,50 @@ puts quotient
 #Object Oriented Programming - Property & Action
 #In Ruby properties are know as instance variables and actions are known as methods.
 
-5.times { print "We *love* Ruby -- it's outrageous!" }
+puts 5.times { print "We *love* Ruby -- it's outrageous!" }
+
+#Ruby - Class & Method
+
+require 'date'
+
+puts Date.today
+puts Date.today - 1
+
+tomorrow = Date.today + 1
+puts tomorrow.strftime("%A, %d %b %Y %l:%M %p")
+
+# define a method in Ruby
+def tomorrow_2
+  tomorrow_date = Date.today + 1
+  return tomorrow_date.strftime("%A, %d %b %Y %l:%M %p")
+end
+
+puts tomorrow_2
+
+def full_name (first, last)
+  name = "#{first.upcase} #{last.downcase}"
+  return name
+end
+
+puts full_name("Yves", "Wilken")
+
+# Refactoring without return
+
+def full_name (first, last)
+  "#{first.upcase} #{last.downcase}"
+end
+
+puts full_name("Yves", "Wilken")
+
+#Boolean Method
+
+def tall?(height)
+  if height >= 180
+    return true
+  else
+    return false
+  end
+end
+
+puts tall?(200)
+puts tall?(170)
