@@ -19,10 +19,10 @@ array.delete_at(1)
 # output array
 p array
 # CRUD - Creat, Read, Update, Delete
-# C --> append << or .push(value)
-# R --> array[index]
-# U --> array[index] = "new_value"
-# D --> .delete(value) or .delete_at[index]
+# C --> append an element << or .push(value)
+# R --> access an elelemt array[index]
+# U --> reassign an element value array[index] = "new_value"
+# D --> delete an element .delete_at[index] as default or .delete(value)
 # initialize array
 array = ["John", "Paul", "George", "Ringo"]
 puts "#{array[1]} is in the band."
@@ -34,3 +34,13 @@ end
 array.each { |index| puts "#{index} is in the band."}
 # output array
 p array
+# Display a list of students and their ages
+# save arrays in variables
+students = ["Peter", "Mary", "George", "Emma"]
+students_ages = [24, 25, 22, 20]
+# output should be Peter is 24, etc.
+# each with index loop array
+students.each_with_index do |student, index|
+  p "#{student} is #{students_ages[index]} years old."
+end
+# p students_ages("Peter")
