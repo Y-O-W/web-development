@@ -13,9 +13,74 @@
             <title>Document Title</title>
         </head>
         <body>
-            <h1 class="roboto-font">Hello World</h1>
-            <p class="open-sans-font">This is a paragraph.</p>
+            <header>
+                <div class="logo">
+                    <a href="/">BrandName</a>
+                </div>
+                
+                <nav aria-label="Primary Navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                
+                <section id="home" class="hero" aria-labelledby="hero-heading">
+                    <h1 id="hero-heading">The Best Solution for Your Business</h1>
+                    <p>Increase productivity and simplify your workflow today.</p>
+                    <a href="#signup" class="cta-button">Get Started for Free</a>
+                </section>
+
+                <section id="features" aria-labelledby="features-heading">
+                    <h2 id="features-heading">Why Choose Us?</h2>
+                    
+                    <article class="feature-item">
+                        <h3>Lightning Fast</h3>
+                        <p>Optimized for speed and performance.</p>
+                    </article>
+
+                    <article class="feature-item">
+                        <h3>Secure by Default</h3>
+                        <p>Your data is protected with enterprise-grade security.</p>
+                    </article>
+                </section>
+
+                <section id="features" class="container" aria-labelledby="features-heading">
+                    <h2 id="features-heading" class="text-center">Why Work With Us?</h2>
+                    <div class="cards">
+                    <article class="card product-card">
+                        <img src="images/apply.svg" class="card-image" alt="apply icon">
+                        <div class="card-content">
+                            <h3>Speedster Pro Running Shoes</h3>
+                            <p>Lightweight, breathable, and built for speed.</p>
+                            <span class="price">$120.00</span>
+                            <button>Add to Cart</button>
+                        </div>
+                    </article>
+                </section>
+
+            </main>
+
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; 2026 BrandName. All rights reserved.</p>
+                    
+                    <nav aria-label="Footer Navigation">
+                        <ul>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/terms">Terms of Service</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+            
             <!-- at the bottom before the closing tag -->
             <script src="index.js"></script>
+
         </body>
     </html>

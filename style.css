@@ -1,0 +1,28 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v7.0.2/css/all.css');
+
+/* Components */
+@import url(./components/header.css);
+@import url(./components/banner.css);
+@import url(./components/card.css);
+@import url(./components/footer.css);
+
+/* Utilitiy Styles & Classes */
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+h1, h2, h3, h4 {
+  font-family: Noto Sans;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
